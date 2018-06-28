@@ -14,11 +14,11 @@ class GoogleDirections {
     
     let apikey = "***REMOVED***"
     
-    var url: String
+    var url: String! = ""
     
-    init(origin: CLLocationCoordinate2D, destination: String, mode: String) {
+    init(origin: CLLocationCoordinate2D, destination: CLLocationCoordinate2D, mode: String) {
         
-        self.url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin.latitude),\(origin.longitude)&destination=place_id:\(destination)&mode=\(mode)&key=\(apikey)"
+       self.url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin.latitude),\(origin.longitude)&destination=\(destination.latitude),\(destination.longitude)&mode=\(mode)&key=\(apikey)"
         
     }
     
