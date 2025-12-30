@@ -32,7 +32,7 @@ NS_SWIFT_NAME(FirebaseOptions)
 
 /**
  * An iOS API key used for authenticating requests from your app, e.g.
- * @"***REMOVED***", used to identify your app to Google servers.
+ * @"YOUR_API_KEY_HERE", used to identify your app to Google servers.
  */
 @property(nonatomic, copy, nullable) NSString *APIKey NS_SWIFT_NAME(apiKey);
 
